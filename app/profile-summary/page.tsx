@@ -1,6 +1,10 @@
-// // app/profile-summary/page.tsx
-// import  ProfileSummaryScreen  from "@/components/screens/ProfileSummaryScreen";
+"use client";
 
-// export default function ProfileSummary() {
-//   return <ProfileSummaryScreen />;
-// }
+import { useRouter } from "next/navigation";
+import ProfileSummaryScreen from "@/components/screens/ProfileSummaryScreen";
+
+export default function ProfileSummaryPage() {
+  const router = useRouter();
+
+  return <ProfileSummaryScreen onViewPortfolio={() => router.push("/dashboard")} />;
+}
