@@ -1,0 +1,6 @@
+// app/dashboard/page.tsx
+import DashboardScreen from "@/components/screens/DashboardScreen";
+
+export default function Dashboard() {
+  return <DashboardScreen />;
+}
